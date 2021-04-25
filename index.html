@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Programming</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+	<!-- Course Java -->
+	<script type="text/javascript" src="tab.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Programming</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>PreProduction</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">STAKE</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="#" onclick="java();">JAVA</a></li>
+                        <li><a href="#" onclick="dotnet();">DOTNET</a></li>
+                        <li><a href="#" onclick="python();">PYTHON</a></li>
+                        <li><a href="#" onclick="ruby();">RUBY</a></li>
+                        <li><a href="#" onclick="node();">NODE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#programming" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Programming</a>
+					<ul class="collapse list-unstyled" id="programming">
+                        <li><a href="#" onclick="java();">JAVA</a></li>
+                        <li><a href="#" onclick="dotnet();">DOTNET</a></li>
+                        <li><a href="#" onclick="python();">PYTHON</a></li>
+                        <li><a href="#" onclick="ruby();">RUBY</a></li>
+                        <li><a href="#" onclick="node();">NODE</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Build Management	</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                      
+							<li><a href="http://www.scmgalaxy.com/courses/apache-maven/" target="_blank">Maven</a></li>
+							<li><a href="http://www.scmgalaxy.com/courses/gradle/" target="_blank">Gradle</a></li>
+							<li><a href="http://www.scmgalaxy.com/courses/msbuild/" target="_blank">MSBuild</a></li>
+							<li><a href="#">PyBuilder</a></li>
+							<li><a href="#">Rake</a></li>
+							<li><a href="http://www.scmgalaxy.com/courses/grunt/" target="_blank">Grunt</a>	</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#unit" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Unit Testing</a>
+					
+					<ul class="collapse list-unstyled" id="unit">
+							<li><a href="#">JUNIT</a></li>
+							<li><a href="#">NUNIT</a></li>
+							<li><a href="#">Unittest</a></li>
+							<li><a href="#">Rspec</a></li>
+							<li><a href="#">Mocha</a></li>
+					</ul>
+
+                </li>
+                <li>
+                    <a href="#packaging" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Packaging <br/>Management</a>
+					<ul class="collapse list-unstyled" id="packaging">
+							<li><a href="#">JAR</a></li>
+							<li><a href="#">WAR</a></li>
+							<li><a href="#">EAR</a></li>
+							<li><a href="#">MSI</a></li>
+							<li><a href="#">EXE</a></li>
+					</ul>
+                </li>
+				<li>
+                    <a href="#codecoverage" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Code Coverage</a>
+					
+					<ul class="collapse list-unstyled" id="codecoverage">
+						<li><a href="http://www.scmgalaxy.com/courses/jacoco/" target="_blank">Jacoco</a></li>
+						<li><a href="http://www.scmgalaxy.com/courses/cobertura/" target="_blank">Cobertura</a></li>
+						<li><a href="#">Ncover</a></li>
+						<li><a href="#">Coverage</a></li>
+						<li><a href="#">Rspec</a></li>
+						<li><a href="#">Mocha</a></li>
+					</ul>
+
+                </li>
+				
+            </ul>
+
+           
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menus</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h4>I am just out of college. What should I learn or what Should be my carreer path in ITs?</h4>
+            <p>After college, graduation plays a crucial role in shaping one’s professional career. After completing the college you are supposed to have superior knowledge in a specific stream of education. It furnishes a base that you can utilize to build your future life. While many students find a right way to fulfill their dreams, a majority of them find it difficult to choose the right career path after college.</p>
+            <p>There are a number of different routes and career to consider. This is an important one to get right. You don’t want to waste your time and money on a subject that is not going to worth in your future career. So, how can you decide? To help you decide which subject area is right for you, We put forward a short case for a number of different career options.</p>
+			<div class="line"></div>
+			
+			<div class="" id="java1" style="display:none;">
+				<h2>Java</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a href="#" class="btn btn-info" role="button">Read More..</a>
+            </div>
+			<div class="" id="dotnet1" style="display:none;">
+				<h2>DOTNET</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a href="#" class="btn btn-info" role="button">Read More..</a>
+            </div>
+			<div class="" id="python1" style="display:none;">
+				<h2>PYTHON</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a href="#" class="btn btn-info" role="button">Read More..</a>
+            </div>
+			<div class="" id="ruby1" style="display:none;">
+				<h2>RUBY</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a href="#" class="btn btn-info" role="button">Read More..</a>
+            </div>
+			<div class="" id="node1" style="display:none;">
+				<h2>NODE</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a href="#" class="btn btn-info" role="button">Read More..</a>
+            </div>
+			<br/>
+			<h5 align="center">After Completing Above Course You have to Follow Below Courses:-</h5>
+			
+			<br/>
+			<!-- Common Course Table -->
+			<table class="table">
+				<tbody>
+					<tr>
+						<th colspan="5">1. Pre Production</th>
+					</tr>
+					<tr>
+						
+						<td>START</td>
+						<td>Planning and Requirement Gathering</td>
+						<td>Code Analysis</td>
+					</tr>
+					<tr>
+						
+						<td>Understanding Software Development Life Cycle</td>
+						<td>JIRA Or Trello Or Servicenow	</td>
+						
+						<td><a href="http://www.scmgalaxy.com/courses/sonarqube" target="_blank">SonarQube</a></td>
+						
+					</tr>
+					<tr>
+						<td>Repository Management</td>
+						<td>Development to QA, Staging, Preprod - Existing Server</td>
+						<td>Deployment to QA, Staging, Preprod - Container</td>
+						</tr>
+					<tr>
+						
+						
+						
+						<td>
+							<ul>
+							<li><a href="http://www.scmgalaxy.com/courses/nexus/" target="_blank">Nexus</a></li>
+							<li><a href="http://www.scmgalaxy.com/courses/artifactory/" target="_blank">Artifactory</a></li>
+							<li><a href="http://www.scmgalaxy.com/courses/apache-archiva/" target="_blank">Archiva</a></li>
+							<li><a href="http://www.scmgalaxy.com/courses/agenda/package-and-repository-management-tools/nuget-training.html" target="_blank">Nuget</a></li>
+						</ul>
+						</td>
+						<td>
+						<ul>
+							<li><a href="http://www.scmgalaxy.com/courses/chef/" target="_blank">Chef</a></li>
+							<li><a href="http://www.scmgalaxy.com/courses/puppet/" target="_blank">Puppet</a></li>
+							<li><a href="http://www.scmgalaxy.com/courses/ansible/" target="_blank">Ansible</a></li>
+						</ul>
+						</td>
+						<td><a href="http://www.scmgalaxy.com/courses/docker/" target="_blank">Docker</a></td>
+					</tr>
+					<tr>
+						
+						<td>Acceptance Testing</td>
+						<td>Deployment to Production - Existing Server</td>
+						<td>Deployment to Production - Container</td>
+					</tr>
+					<tr>
+					
+					<td>
+						<ul>
+							<li>Cucumber</li>
+							<li>Selenium</li>
+							<li>Uft</li>
+							<li>Xunit</li>
+						</ul>
+					</td>
+					
+						<td><ul>
+							<li><a href="http://www.scmgalaxy.com/courses/chef/" target="_blank">Chef</a></li>
+							<li><a href="http://www.scmgalaxy.com/courses/puppet/" target="_blank">Puppet</a></li>
+							<li><a href="http://www.scmgalaxy.com/courses/ansible/" target="_blank">Ansible</a></li>
+						</ul>
+						</td>
+						<td><a href="http://www.scmgalaxy.com/courses/kubernetes/" target="_blank">Kubernetes</a></td>
+					</tr>
+		
+		</table>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
